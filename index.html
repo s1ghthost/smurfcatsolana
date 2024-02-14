@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smurf Cat Sol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="backgroundLogo">
+        <img src="smurf.png">
+    </div>
+    <div id="stickerPopup" class="modal">
+        <div class="modal-content">
+            <div class="modal-titlebar">
+                <span class="modal-title">Smurf Cat Sol</span>
+                <span class="close">&times;</span>
+            </div>
+            <div id="stickerContainer">
+                <img src="hats/1.png" class="sticker" draggable="true" />
+                <img src="hats/2.png" class="sticker" draggable="true" /> 
+                <img src="hats/3.png" class="sticker" draggable="true" />  
+                <img src="hats/4.png" class="sticker" draggable="true" />  
+                <img src="hats/5.png" class="sticker" draggable="true" />     
+                <img src="hats/6.png" class="sticker" draggable="true" />     
+                <img src="hats/7.png" class="sticker" draggable="true" />     
+                <img src="hats/8.png" class="sticker" draggable="true" />     
+            </div>
+        </div>
+    </div>
+    <input type="file" id="imageLoader" accept="image/*" style="display: none;" />
+    <div id="buttonContainer">
+        <div id="addStickerBtn">
+            <div class="stickerIcon">
+                <img src="hats/2.png" alt="Sticker Icon" />
+            </div>
+            <span>Smurf It</span>
+        </div>
+        <button id="deleteBtn" style="display:none;">X</button>
+        <button id="saveBtn">Save Smurf</button>
+        <button id="resetBtn">Reset Smurf</button>
+    </div>
+    <div id="canvasContainer">
+
+        <canvas id="imageCanvas"></canvas>
+        <label for="imageLoader" id="uploadIcon">
+            <img src="upload_icon.png" alt="Upload" /> 
+        </label>
+        <input type="file" id="imageLoader" accept="image/*" style="display: none;" />
+    </div>
+
+    <!-- Trigger Button -->
+
+    <script src="https://cdn.jsdelivr.net/gh/s1ghthost/smurfcatsolana@main/fabric.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/s1ghthost/smurfcatsolana@main/app.js"></script>
+
+    <!-- Pop-up Modal -->
+
+
+</body>
+
+</html>
